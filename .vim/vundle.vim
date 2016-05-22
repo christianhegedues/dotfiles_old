@@ -21,5 +21,7 @@ Bundle 'VundleVim/Vundle.vim'
 " This reduces churn and makes it easier to fork. See
 " ~/.vim/vundles/ to edit them:
 
+runtime appearance.vundle
+
 " Filetype plugin indent on is required by vundle
 filetype plugin indent on

@@ -13,3 +13,5 @@ let mapleader=","
 if filereadable(expand("~/.vim/vundle.vim"))
     source ~/.vim/vundle.vim
 endif
+
+source ~/.vim/settings.vim

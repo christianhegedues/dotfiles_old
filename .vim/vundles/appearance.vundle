@@ -1,0 +1,2 @@
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
