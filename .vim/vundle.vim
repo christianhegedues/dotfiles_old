@@ -22,6 +22,7 @@ Bundle 'VundleVim/Vundle.vim'
 " ~/.vim/vundles/ to edit them:
 
 runtime appearance.vundle
+runtime git.vundle
 
 " Filetype plugin indent on is required by vundle
 filetype plugin indent on
