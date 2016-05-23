@@ -24,6 +24,7 @@ Bundle 'VundleVim/Vundle.vim'
 runtime appearance.vundle
 runtime git.vundle
 runtime search.vundle
+runtime languages.vundle
 
 " Filetype plugin indent on is required by vundle
 filetype plugin indent on
