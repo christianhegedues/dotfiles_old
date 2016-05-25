@@ -51,4 +51,16 @@ endif
 " ==============================================================================
 " 05. Text Formatting/Layout=
 " ==============================================================================
+set expandtab " use spaces instead of tabs
+set shiftwidth=2 " indent/outdent 2 columns
+set softtabstop=2 " unify
+set autoindent " auto-indent
+set smartindent " automatically inset one extra level of indentation
+set backspace=indent,eol,start " Allow backspace in insert mode
+set nowrap "don't wrap text
+
+" Auto indent pasted text
+nnoremap p p=`]<C-o>
+nnoremap P P=`]<C-o>
+
 source ~/.vim/settings.vim
