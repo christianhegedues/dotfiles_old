@@ -2,6 +2,11 @@
 " 01. General                                                                  =
 " ==============================================================================
 set nocompatible " get rid of Vi compatibility mode.
+set shortmess=atI " Don’t show the intro message when starting Vim
+set history=1000 "Store lots of :cmdline history
+set noswapfile
+set nobackup
+set nowb
 
 " Change leader to a comma because the backslash is too far away. The mapleader
 " has to be set before vundle starts loading all the plugins.
