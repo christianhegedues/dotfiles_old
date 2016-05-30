@@ -8,7 +8,7 @@
 
 dir=$PWD # dotfiles directory
 olddir=~/dotfiles_old # old dotfiles backup directory
-files="" # list of files/folders to symlink in homedir
+files="vimrc vim" # list of files/folders to symlink in homedir
 
 ##########
 
@@ -26,5 +26,5 @@ echo "done"
 for file in $files; do
 mv ~/.$file ~/dotfiles_old/
 echo "Creating symlink to $file in home directory."
-ln -s $dir/$file ~/.$file
+ln -s $dir/.$file ~/.$file
 done
