@@ -8,7 +8,7 @@
 
 dir=$PWD # dotfiles directory
 olddir=~/dotfiles_old # old dotfiles backup directory
-files="bash bash_profile bash_prompt vimrc vim" # list of files/folders to symlink in homedir
+files="bashrc bash_profile bash_prompt vimrc vim" # list of files/folders to symlink in homedir
 
 ##########
 
