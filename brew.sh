@@ -6,7 +6,6 @@ if [[ `uname` == 'Darwin' ]]; then
   if [[ $? != 0 ]]; then
     echo 'Installing Homebrew...'
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    brew update
 
     # Install command-line tools using Homebrew.
     # Make sure we’re using the latest Homebrew.
