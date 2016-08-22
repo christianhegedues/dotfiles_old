@@ -51,7 +51,6 @@ if [[ `uname` == 'Darwin' ]]; then
     brew install gh
 
     # Install other useful binaries
-    brew install ack
     brew install the_silver_searcher
 
     brew install git
