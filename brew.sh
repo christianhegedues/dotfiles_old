@@ -57,7 +57,7 @@ if [[ `uname` == 'Darwin' ]]; then
     brew install git
     brew install git-lfs
     brew install imagemagick --with-webp
-    brew install nvm
+    brew install node
     brew install rename
     brew install tree
 
