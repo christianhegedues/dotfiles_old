@@ -43,3 +43,12 @@ for file in $files; do
 done
 echo "... done"
 echo ""
+
+#
+# install VIM  plugins
+#
+echo "Installing VIM plugins for you"
+vim +PluginInstall +qall
+echo "... done"
+echo ""
+
