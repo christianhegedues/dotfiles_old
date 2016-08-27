@@ -1,6 +1,3 @@
-nmap <Leader>f :CtrlP<CR>
-nmap <Leader>b :CtrlPBuffer<CR>
-
 augroup ctrlp_config
     autocmd!
     let g:ctrlp_clear_cache_on_exit=0 " Do not clear filenames cache, to improve CtrlP startup
