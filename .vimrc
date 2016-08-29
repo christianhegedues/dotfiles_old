@@ -30,7 +30,12 @@ colorscheme solarized
 
 " ==============================================================================
 " 04. Vim UI=
-" ==============================================================================
+"  ==============================================================================
+
+" Highlight only the lines that go past 80 characters
+highlight ColorColumn ctermbg=green guibg=green
+call matchadd('ColorColumn', '\%82v', 100)
+
 set list lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set number " Enable line numbers
 set showcmd " Show the (partial) command as it’s being typed
