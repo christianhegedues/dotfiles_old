@@ -4,13 +4,49 @@
 set nocompatible " get rid of Vi compatibility mode.
 set shortmess=atI " Don’t show the intro message when starting Vim
 set history=1000 "Store lots of :cmdline history
-set noswapfile
-set nobackup
-set nowb
+
+"
+" Setup folder structure
+"
+
+if !isdirectory(expand('~/.vim/undo/', 1))
+    silent call mkdir(expand('~/.vim/undo', 1), 'p')
+endif
+
+if !isdirectory(expand('~/.vim/backup/', 1))
+    silent call mkdir(expand('~/.vim/backup', 1), 'p')
+endif
+
+if !isdirectory(expand('~/.vim/swap/', 1))
+    silent call mkdir(expand('~/.vim/swap', 1), 'p')
+endif
 
 " Change leader to a comma because the backslash is too far away. The mapleader
 " has to be set before vundle starts loading all the plugins.
 let mapleader=","
+
+"
+" Gobal settings
+"
+
+" Turn on persistent undo
+" Thanks, Mr Wadsten: github.com/mikewadsten/dotfiles/
+if has('persistent_undo')
+    set undodir=~/.vim/undo//
+    set undofile
+    set undolevels=1000
+    set undoreload=10000
+endif
+
+" Use backups
+" http://stackoverflow.com/a/15317146
+set backup
+set writebackup
+set backupdir=~/.vim/backup//
+
+" Use a specified swap folder
+" http://stackoverflow.com/a/15317146
+set directory=~/.vim/swap//
 
 " ==============================================================================
 " 02. Plugins                                                                  =

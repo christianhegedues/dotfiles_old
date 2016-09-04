@@ -1,2 +1,7 @@
 # ignore vim plugins
 bundle/*
+
+# ignore undo, swap and backup
+undo/*
+swap/*
+backup/*
