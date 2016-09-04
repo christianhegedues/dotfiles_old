@@ -29,6 +29,22 @@ let mapleader=","
 " Gobal settings
 "
 
+" Use smarter defaults
+set smartindent
+set smarttab
+"
+" Use autoindenting
+set autoindent
+
+" " The tabstop look best at 4 spacing
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+" I have been converted to the dark side, I will use spaces to indent code
+" from here on out
+set expandtab
+
 " Turn on persistent undo
 " Thanks, Mr Wadsten: github.com/mikewadsten/dotfiles/
 if has('persistent_undo')
@@ -101,11 +117,6 @@ endif
 " ==============================================================================
 " 05. Text Formatting/Layout=
 " ==============================================================================
-set expandtab " use spaces instead of tabs
-set shiftwidth=2 " indent/outdent 2 columns
-set softtabstop=2 " unify
-set autoindent " auto-indent
-set smartindent " automatically inset one extra level of indentation
 set backspace=indent,eol,start " Allow backspace in insert mode
 set nowrap "don't wrap text
 
