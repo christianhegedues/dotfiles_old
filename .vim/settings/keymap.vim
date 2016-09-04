@@ -1,6 +1,25 @@
-""
-"" General Mappings (Normal, Visual, Operator-pending)
-""
+"
+" General Mappings (Normal, Visual, Operator-pending)
+"
+
+" Disable ex mode, ick, remap it to Q instead.
+"
+" Tip:
+"   Use command-line-window with q:
+"   Use search history with q/
+"
+" More info:
+" http://blog.sanctum.geek.nz/vim-command-window/
+nmap Q q
+
+" Map Ctrl+V to paste in Insert mode
+imap <C-V> <C-R>*
+
+" Map Ctrl+C to copy in Visual mode
+vmap <C-C> "+y
+
+" Add paste shortcut
+nmap <leader>P "+p
 
 " Escape inset mode and write to file
 imap jj <ESC>:w<CR>
