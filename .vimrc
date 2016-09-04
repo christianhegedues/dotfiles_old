@@ -3,7 +3,6 @@
 " ==============================================================================
 set nocompatible " get rid of Vi compatibility mode.
 set shortmess=atI " Don’t show the intro message when starting Vim
-set history=1000 "Store lots of :cmdline history
 
 "
 " Setup folder structure
@@ -28,6 +27,9 @@ let mapleader=","
 "
 " Gobal settings
 "
+
+" The default 20 isn't nearly enough
+set history=9999
 
 " Use smarter defaults
 set smartindent
