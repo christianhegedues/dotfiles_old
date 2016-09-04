@@ -119,6 +119,28 @@ set encoding=utf-8
 " Enhanced mode for command-line completion
 set wildmenu
 
+" Ignore some defaults
+set wildignore=*.o,*.obj,*~,*.pyc
+set wildignore+=.env
+set wildignore+=.env[0-9]+
+set wildignore+=.git,.gitkeep
+set wildignore+=.tmp
+set wildignore+=.coverage
+set wildignore+=*DS_Store*
+set wildignore+=.sass-cache/
+set wildignore+=__pycache__/
+set wildignore+=vendor/rails/**
+set wildignore+=vendor/cache/**
+set wildignore+=*.gem
+set wildignore+=log/**
+set wildignore+=tmp/**
+set wildignore+=.tox/**
+set wildignore+=.idea/**
+set wildignore+=*.egg,*.egg-info
+set wildignore+=*.png,*.jpg,*.gif
+set wildignore+=*.so,*.swp,*.zip,*/.Trash/**,*.pdf,*.dmg,*/Library/**,*/.rbenv/**
+set wildignore+=*/.nx/**,*.app
+
 " Automatically re-read the file if it has changed
 set autoread
 
