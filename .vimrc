@@ -32,11 +32,11 @@ let mapleader=","
 " Use smarter defaults
 set smartindent
 set smarttab
-"
+
 " Use autoindenting
 set autoindent
 
-" " The tabstop look best at 4 spacing
+" The tabstop look best at 4 spacing
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -73,6 +73,24 @@ if filereadable(expand("~/.vim/vundle.vim"))
     source ~/.vim/vundle.vim
 endif
 
+" Whitespace settings
+nmap <leader>ws :cal ToggleWhitespace()<cr>
+
+" Show trailing whitespace and tabs obnoxiously
+set list listchars=tab:▸\ ,trail:·
+set list
+
+fun! ToggleWhitespace()
+    if &list
+        set nolist
+        :echo "Disable whitespace"
+    else
+        set list listchars=tab:▸\ ,trail:·
+        set list
+        :echo "Enable whitespace"
+    endif
+endfun
+
 " ==============================================================================
 " 03. Theme/Colors=
 " ==============================================================================
@@ -88,7 +106,6 @@ colorscheme solarized
 highlight ColorColumn ctermbg=green guibg=green
 call matchadd('ColorColumn', '\%82v', 100)
 
-set list lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set number " Enable line numbers
 set showcmd " Show the (partial) command as it’s being typed
 set showmode " Show the current mode
