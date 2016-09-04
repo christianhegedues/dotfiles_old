@@ -1,6 +1,3 @@
-" Always show status line
-set laststatus=2
-
 augroup airline_config
   autocmd!
   let g:airline_left_sep=''

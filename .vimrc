@@ -1,8 +1,6 @@
-" ==============================================================================
-" 01. General                                                                  =
-" ==============================================================================
+" As the help says 'Make vim behave in a more useful way'
+" **Must be first uncommented line**
 set nocompatible " get rid of Vi compatibility mode.
-set shortmess=atI " Don’t show the intro message when starting Vim
 
 "
 " Setup folder structure
@@ -20,16 +18,47 @@ if !isdirectory(expand('~/.vim/swap/', 1))
     silent call mkdir(expand('~/.vim/swap', 1), 'p')
 endif
 
-" Change leader to a comma because the backslash is too far away. The mapleader
-" has to be set before vundle starts loading all the plugins.
-let mapleader=","
-
 "
 " Gobal settings
 "
 
 " The default 20 isn't nearly enough
 set history=9999
+
+" Show the numbers on the left of the screen
+set number
+
+" Show the column/row
+set ruler
+
+" Highlight only the lines that go past 80 characters
+highlight ColorColumn ctermbg=green guibg=green
+call matchadd('ColorColumn', '\%82v', 100)
+
+" Pretty colors are fun, yayyy
+syntax on
+"
+" Show the matching when doing a search
+set showmatch
+
+" Allows the backspace to delete indenting, end of lines, and over the start
+" of insert
+set backspace=indent,eol,start
+
+" Ignore case when doing a search as well as highlight it as it is typed
+set ignorecase smartcase
+set hlsearch
+set incsearch
+
+" Don't show the startup message
+set shortmess=I
+"
+" Show the current command at the bottom
+set showcmd
+
+" Disable beeping and flashing.
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 
 " Use smarter defaults
 set smartindent
@@ -46,6 +75,14 @@ set shiftwidth=4
 " I have been converted to the dark side, I will use spaces to indent code
 " from here on out
 set expandtab
+
+" This makes vim act like all other editors, buffers can
+" exist in the background without being in a window.
+" http://items.sjbach.com/319/configuring-vim-right
+set hidden
+
+" Better completion
+set completeopt+=longest,menuone,preview
 
 " Turn on persistent undo
 " Thanks, Mr Wadsten: github.com/mikewadsten/dotfiles/
@@ -65,6 +102,25 @@ set backupdir=~/.vim/backup//
 " Use a specified swap folder
 " http://stackoverflow.com/a/15317146
 set directory=~/.vim/swap//
+
+" The comma makes a great leader of men, heh heh
+let mapleader = ','
+let maplocalleader = '\'
+
+" Show two lines for the status line
+set laststatus=2
+
+" Always show the last line
+set display+=lastline
+
+" UTF-8 THIS SHITTTTTT
+set encoding=utf-8
+
+" Enhanced mode for command-line completion
+set wildmenu
+
+" Automatically re-read the file if it has changed
+set autoread
 
 " ==============================================================================
 " 02. Plugins                                                                  =
@@ -96,37 +152,14 @@ endfun
 " ==============================================================================
 " 03. Theme/Colors=
 " ==============================================================================
-syntax on
 set background=dark
 colorscheme solarized
 
-" ==============================================================================
-" 04. Vim UI=
-"  ==============================================================================
-
-" Highlight only the lines that go past 80 characters
-highlight ColorColumn ctermbg=green guibg=green
-call matchadd('ColorColumn', '\%82v', 100)
-
-set number " Enable line numbers
-set showcmd " Show the (partial) command as it’s being typed
-set showmode " Show the current mode
-set title " Show the filename in the window titlebar
-set visualbell " No sounds
-set incsearch " Find the next match as we type the search
-set hlsearch " Highlight searches by default
-set ignorecase " Ignore case when searching...
-set smartcase " ...unless we type a capital
-"
 "Start scrolling when we're 8 lines away from margins
 set scrolloff=8
 set sidescrolloff=8
 set sidescroll=8
 
-" This makes vim act like all other editors, buffers can
-" exist in the background without being in a window.
-" http://items.sjbach.com/319/configuring-vim-right
-set hidden
 
 " Use relative line numbers
 if exists("&relativenumber")
@@ -136,7 +169,6 @@ endif
 " ==============================================================================
 " 05. Text Formatting/Layout=
 " ==============================================================================
-set backspace=indent,eol,start " Allow backspace in insert mode
 set nowrap "don't wrap text
 
 " Auto indent pasted text
