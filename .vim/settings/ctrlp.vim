@@ -4,7 +4,7 @@ augroup ctrlp_config
     let g:ctrlp_custom_ignore='\.git$\|\.hg$\|\.svn$'
     let g:ctrlp_lazy_update=350 " Set delay to prevent extra search
     let g:ctrlp_match_window_bottom=1 " Show at top of window
-    let g:ctrlp_max_depth=6 " Directory depth to recurse into when scanning
+    let g:ctrlp_max_depth=0 " Directory depth to recurse into when scanning
     let g:ctrlp_max_files=600 " Set no file limit, we are building a big project
     let g:ctrlp_show_hidden=1 " Ignore dotfiles and dotdirs or not
     let g:ctrlp_switch_buffer='Et' " Jump to tab AND buffer if already open
