@@ -1,3 +1,3 @@
-Bundle "rking/ag.vim"
+Bundle "mileszs/ack.vim"
 Bundle "ctrlpvim/ctrlp.vim"
 Bundle "scrooloose/nerdtree"
