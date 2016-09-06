@@ -1,1 +1,2 @@
 Bundle "mattn/emmet-vim"
+Bundle "tpope/vim-surround"
