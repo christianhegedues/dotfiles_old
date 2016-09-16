@@ -140,6 +140,7 @@ set wildignore+=*.egg,*.egg-info
 set wildignore+=*.png,*.jpg,*.gif
 set wildignore+=*.so,*.swp,*.zip,*/.Trash/**,*.pdf,*.dmg,*/Library/**,*/.rbenv/**
 set wildignore+=*/.nx/**,*.app
+set wildignore+=**/node_modules
 
 " Automatically re-read the file if it has changed
 set autoread
