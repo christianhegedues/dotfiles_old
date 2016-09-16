@@ -141,6 +141,7 @@ set wildignore+=*.png,*.jpg,*.gif
 set wildignore+=*.so,*.swp,*.zip,*/.Trash/**,*.pdf,*.dmg,*/Library/**,*/.rbenv/**
 set wildignore+=*/.nx/**,*.app
 set wildignore+=**/node_modules
+set wildignore+=**/bower_components
 
 " Automatically re-read the file if it has changed
 set autoread
