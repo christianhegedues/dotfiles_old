@@ -192,10 +192,23 @@ if exists("&relativenumber")
     set relativenumber
     au BufReadPost * set relativenumber
 endif
+
+" wrap long lines at characters in 'breakat'
+if has('linebreak')
+    set wrap
+    set linebreak
+    set textwidth=80
+    let &showbreak='↳ '
+
+    " emphasize broken lines by indenting them
+    set breakindent
+    if exists('&breakindentopt')
+        set breakindentopt=shift:2
+    endif
+endif
 " ==============================================================================
 " 05. Text Formatting/Layout=
 " ==============================================================================
-set nowrap "don't wrap text
 
 " Auto indent pasted text
 nnoremap p p=`]<C-o>
