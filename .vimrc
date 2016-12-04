@@ -208,6 +208,16 @@ if has('linebreak')
         set breakindentopt=shift:2
     endif
 endif
+
+" open horizontal splits below current window
+if has('windows')
+    set splitbelow
+endif
+
+" open vertical splits to the right of the current window
+if has('vertsplit')
+    set splitright
+endif
 " ==============================================================================
 " 05. Text Formatting/Layout=
 " ==============================================================================
