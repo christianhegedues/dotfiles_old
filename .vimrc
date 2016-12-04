@@ -33,10 +33,6 @@ set number
 " Show the column/row
 set ruler
 
-" Highlight only the lines that go past 80 characters
-highlight ColorColumn ctermbg=green guibg=green
-call matchadd('ColorColumn', '\%82v', 100)
-
 " Pretty colors are fun, yayyy
 syntax on
 "
@@ -51,6 +47,8 @@ set backspace=indent,eol,start
 set ignorecase smartcase
 set hlsearch
 set incsearch
+
+set highlight+=@:ColorColumn          " ~/@ at end of window, 'showbreak'
 
 " Don't show the startup message
 set shortmess=I
@@ -186,6 +184,10 @@ set scrolloff=8
 set sidescrolloff=8
 set sidescroll=8
 
+" Highlight up to 255 columns (this is the current Vim max) beyond 'textwidth'
+if exists('+colorcolumn')
+    let &l:colorcolumn='+' . join(range(0, 254), ',+')
+endif
 
 " Use relative line numbers
 if exists("&relativenumber")
