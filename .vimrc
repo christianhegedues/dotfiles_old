@@ -1,3 +1,5 @@
+scriptencoding utf-8
+
 " As the help says 'Make vim behave in a more useful way'
 " **Must be first uncommented line**
 set nocompatible " get rid of Vi compatibility mode.
