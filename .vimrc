@@ -189,6 +189,9 @@ if exists('+colorcolumn')
     let &l:colorcolumn='+' . join(range(0, 254), ',+')
 endif
 
+set highlight+=N:DiffText
+set cursorline
+
 " Use relative line numbers
 if exists("&relativenumber")
     set relativenumber

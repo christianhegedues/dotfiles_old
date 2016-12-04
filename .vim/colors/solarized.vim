@@ -665,7 +665,7 @@ exe "hi! FoldColumn"     .s:fmt_bold   .s:fg_base0  .s:bg_base02
 exe "hi! DiffAdd"        .s:fmt_revr   .s:fg_green  .s:bg_none
 exe "hi! DiffChange"     .s:fmt_revr   .s:fg_yellow .s:bg_none
 exe "hi! DiffDelete"     .s:fmt_revr   .s:fg_red    .s:bg_none
-exe "hi! DiffText"       .s:fmt_revr   .s:fg_blue   .s:bg_none
+exe "hi! DiffText"       .s:fmt_none   .s:fg_none   .s:bg_base02
 exe "hi! SignColumn"     .s:fmt_none   .s:fg_base0  .s:bg_base02
 exe "hi! Conceal"        .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! SpellBad"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_red
