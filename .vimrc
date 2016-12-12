@@ -185,8 +185,11 @@ set sidescrolloff=8
 set sidescroll=8
 
 " Highlight up to 255 columns (this is the current Vim max) beyond 'textwidth'
-if exists('+colorcolumn')
-    let &l:colorcolumn='+' . join(range(0, 254), ',+')
+if has('autocmd')
+    if exists('+colorcolumn')
+        autocmd BufEnter,FocusGained,VimEnter,WinEnter * let &l:colorcolumn='+' . join(range(0, 254), ',+')
+        autocmd FocusLost,WinLeave * let &l:colorcolumn=join(range(1, 255), ',')
+    endif
 endif
 
 set highlight+=N:DiffText
