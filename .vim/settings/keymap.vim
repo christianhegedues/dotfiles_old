@@ -31,11 +31,6 @@ nnoremap ,yw yiww
 "Go to last edit location with ,.
 noremap ,. '.
 
-"Move back and forth through previous and next buffers
-""with ,z and ,x
-nnoremap <silent> <S-Tab> :bp<CR>
-nnoremap <silent> <Tab> :bn<CR>
-
 " Toggle hlsearch with <leader>hs
 nmap <Leader>hs :set hlsearch! hlsearch?<CR>
 
