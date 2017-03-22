@@ -92,7 +92,6 @@ if [[ `uname` == 'Darwin' ]]; then
   brew install homebrew/completions/brew-cask-completion
 
   # Apps
-  brew cask install spectacle
   brew cask install iterm2
   brew cask install imagealpha
   brew cask install imageoptim
