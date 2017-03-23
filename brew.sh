@@ -41,6 +41,7 @@ if [[ `uname` == 'Darwin' ]]; then
         brew install wget --with-iri
 
         # Install more recent versions of some macOS tools.
+        brew install ctags
         brew install vim --width-override-system-vi
         brew install homebrew/dupes/grep
         brew install homebrew/dupes/less

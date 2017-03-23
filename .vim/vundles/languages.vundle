@@ -1,4 +1,0 @@
-Bundle "mattn/emmet-vim"
-Bundle "tpope/vim-surround"
-Bundle "othree/html5.vim"
-Bundle "JulesWang/css.vim"
