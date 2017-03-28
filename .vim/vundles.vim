@@ -50,11 +50,6 @@ if count(g:vundles, 'completion')
   Bundle 'Indent-Guides'
 endif
 
-" PHP
-if count(g:vundles, 'php')
-  Bundle 'spf13/PIV'
-endif
-
 " Python
 if count(g:vundles, 'python')
   Bundle 'hynek/vim-python-pep8-indent'
