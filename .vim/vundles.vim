@@ -64,11 +64,6 @@ if count(g:vundles, 'html')
   Bundle 'juvenn/mustache.vim'
 endif
 
-" Ruby
-if count(g:vundles, 'ruby')
-  Bundle 'tpope/vim-rails'
-endif
-
 " Misc
 if count(g:vundles, 'misc')
   Bundle 'tpope/vim-markdown'
