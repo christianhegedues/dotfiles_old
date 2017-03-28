@@ -44,12 +44,6 @@ if count(g:vundles, 'completion')
   Bundle 'Indent-Guides'
 endif
 
-" Python
-if count(g:vundles, 'python')
-  Bundle 'hynek/vim-python-pep8-indent'
-  let g:syntastic_python_flake8_args='--ignore=E501'
-endif
-
 " Javascript
 if count(g:vundles, 'javascript')
   Bundle 'leshill/vim-json'
