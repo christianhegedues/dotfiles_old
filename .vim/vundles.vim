@@ -16,7 +16,6 @@ if count(g:vundles, 'general')
   Bundle 'Raimondi/delimitMate'
   Bundle 'bling/vim-airline'
   Bundle 'vim-airline/vim-airline-themes'
-  Bundle 'rodjek/vim-puppet'
 endif
 
 if count(g:vundles, 'git')
@@ -63,6 +62,5 @@ if count(g:vundles, 'misc')
   Bundle 'tpope/vim-markdown'
   Bundle 'spf13/vim-preview'
   Bundle 'tpope/vim-cucumber'
-  Bundle 'Puppet-Syntax-Highlighting'
 endif
 
