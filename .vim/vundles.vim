@@ -27,12 +27,6 @@ if count(g:vundles, 'git')
   endif
 endif
 
-if count(g:vundles, 'hg')
-  if executable('hg')
-    Bundle 'k-takata/hg-vim'
-  endif
-endif
-
 " General Programming
 if count(g:vundles, 'programming')
   Bundle 'godlygeek/tabular'
