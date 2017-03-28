@@ -82,9 +82,5 @@ if count(g:vundles, 'misc')
   Bundle 'tpope/vim-cucumber'
   Bundle 'markcornick/vim-vagrant'
   Bundle 'Puppet-Syntax-Highlighting'
-  if v:version > 701
-    Bundle 'zhaocai/GoldenView.Vim'
-  endif
-  let g:goldenview__enable_default_mapping=0
 endif
 
