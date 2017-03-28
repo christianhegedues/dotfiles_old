@@ -6,7 +6,7 @@ if has("user_commands")
   filetype off
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
-  let g:vundles=['general', 'git', 'programming', 'completion', 'javascript', 'html', 'misc']
+  let g:vundles=['general', 'git', 'programming', 'javascript', 'html', 'misc']
   " Load 'vundles'
   source ~/.vim/vundles.vim
   " Add extra bundles here...

@@ -37,12 +37,6 @@ if count(g:vundles, 'programming')
   endif
 endif
 
-if count(g:vundles, 'completion')
-  Bundle 'honza/vim-snippets'
-  Bundle 'scrooloose/snipmate-snippets'
-  Bundle 'Indent-Guides'
-endif
-
 " Javascript
 if count(g:vundles, 'javascript')
   Bundle 'leshill/vim-json'
