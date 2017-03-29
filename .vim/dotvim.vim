@@ -1,4 +1,3 @@
-set nocompatible
 set shortmess=I
 
 set encoding=utf-8
