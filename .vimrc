@@ -22,12 +22,6 @@ if has('autocmd')
   endif
 endif
 
-" Use relative line numbers
-if exists("&relativenumber")
-  set relativenumber
-  au BufReadPost * set relativenumber
-endif
-
 " wrap long lines at characters in 'breakat'
 if has('linebreak')
   set wrap
