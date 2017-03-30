@@ -74,6 +74,7 @@ if [[ `uname` == 'Darwin' ]]; then
         brew cask install iterm2
         brew cask install imagealpha
         brew cask install imageoptim
+        brew cask install google-chrome
         brew cask install google-chrome-canary
         brew cask install firefoxnightly
         brew cask install webkit-nightly
