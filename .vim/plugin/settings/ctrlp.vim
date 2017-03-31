@@ -17,6 +17,8 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:25'
 set wildignore+=*/smarty_c/**
 set wildignore+=*/vendor/**
 set wildignore+=*/bower_components/**
+set wildignore+=*/node_modules/**
+set wildignore+=*/dist/**
 
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_show_hidden = 1
