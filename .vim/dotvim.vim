@@ -55,11 +55,14 @@ set smartcase           " do not ignore if search pattern has CAPS
 set nobackup            " do not write backup files
 set noswapfile          " do not write .swp files
 if has("persistent_undo")
-  silent !mkdir -vp ~/.backup/vim/undo/ > /dev/null 2>&1
-  set backupdir=~/.backup/vim,.       " list of directories for the backup file
-  set directory=~/.backup/vim,~/tmp,. " list of directory names for the swap file
+  let s:vim_cache = expand('$HOME/.vim/backup')
+  if filewritable(s:vim_cache) == 0 && exists("*mkdir")
+    call mkdir(s:vim_cache, "p", 0700)
+  endif
+  set backupdir=~/.vim/backup/,.       " list of directories for the backup file
+  set directory=~/.vim/backup/,~/tmp,. " list of directory names for the swap file
   set undofile
-  set undodir=~/.backup/vim/undo/,~/tmp,.
+  set undodir=~/.vim/backup/undo/,~/tmp,.
 endif
 
 " folding
