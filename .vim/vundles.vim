@@ -39,7 +39,7 @@ endif
 
 " Javascript
 if count(g:vundles, 'javascript')
-  Bundle 'leshill/vim-json'
+  Bundle 'elzr/vim-json'
   Bundle 'groenewege/vim-less'
   Bundle 'taxilian/vim-web-indent'
 endif
