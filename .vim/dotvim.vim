@@ -62,7 +62,7 @@ if has("persistent_undo")
   set backupdir=~/.vim/backup/,.       " list of directories for the backup file
   set directory=~/.vim/backup/,~/tmp,. " list of directory names for the swap file
   set undofile
-  set undodir=~/.vim/backup/undo/,~/tmp,.
+  set undodir=~/.vim/backup/,~/tmp,.
 endif
 
 " folding
