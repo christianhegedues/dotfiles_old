@@ -55,6 +55,7 @@ endif
 " Misc
 if count(g:vundles, 'misc')
   Bundle 'tpope/vim-markdown'
+  Bundle 'JamshedVesuna/vim-markdown-preview'
   Bundle 'spf13/vim-preview'
   Bundle 'tpope/vim-cucumber'
 endif
