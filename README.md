@@ -16,7 +16,26 @@ Follow these install instructions to setup a new Mac.
 3. Enter your working directory (e.g. ~/Projects) and clone this repo `git clone git@github.com:christianhegedues/dotfiles.git`
 4. Run `bootstrap.sh` script
 
-Your Mac is now ready to use!
+Your Mac is now ready to use
+
+## Installing Ruby versions and Bundler
+
+Put *rbenv* to work with Bundler for painless Ruby upgrades. Further
+informations and documentation can be found on [rbenv repository](https://github.com/rbenv/rbenv)
+
+~~~ sh
+# list all available versions:
+$ rbenv install -l
+
+# install a Ruby version:
+$ rbenv install x.x.x
+
+# sets the global version of Ruby
+$ rbenv global x.x.x
+
+# install Bundler
+$ gem install bundler
+~~~
 
 ## License
 
