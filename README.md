@@ -16,7 +16,15 @@ Follow these install instructions to setup a new Mac.
 3. Enter your working directory (e.g. ~/Projects) and clone this repo `git clone git@github.com:christianhegedues/dotfiles.git`
 4. Run `bootstrap.sh` script
 
-Your Mac is now ready to use
+## Generating an SSH Key Pair
+
+To generate an RSA key pair on your local computer, type:
+
+~~~ sh
+# Checking for SSH key, generating one if it does not exist and copying public
+# key to clipboard
+$ sh bin/ssh.sh
+~~~
 
 ## Installing Ruby versions and Bundler
 
