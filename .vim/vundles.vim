@@ -17,6 +17,7 @@ if count(g:vundles, 'general')
   Bundle 'bling/vim-airline'
   Bundle 'vim-airline/vim-airline-themes'
   Bundle 'mikewest/vimroom'
+  Bundle 'tpope/vim-surround'
 endif
 
 if count(g:vundles, 'git')
