@@ -5,7 +5,6 @@ Bundle 'gmarik/vundle'
 if count(g:vundles, 'general')
   Bundle 'chriskempson/base16-vim'
   Bundle 'kien/ctrlp.vim'
-  Bundle 'sudo.vim'
   Bundle 'bronson/vim-trailing-whitespace'
   Bundle 'mbbill/undotree'
   Bundle 'Raimondi/delimitMate'
@@ -40,7 +39,6 @@ endif
 if count(g:vundles, 'javascript')
   Bundle 'elzr/vim-json'
   Bundle 'groenewege/vim-less'
-  Bundle 'taxilian/vim-web-indent'
   Bundle 'pangloss/vim-javascript'
   Bundle 'othree/javascript-libraries-syntax.vim'
 endif
@@ -57,6 +55,5 @@ if count(g:vundles, 'misc')
   Bundle 'tpope/vim-markdown'
   Bundle 'JamshedVesuna/vim-markdown-preview'
   Bundle 'spf13/vim-preview'
-  Bundle 'tpope/vim-cucumber'
 endif
 
