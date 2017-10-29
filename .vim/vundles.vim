@@ -41,6 +41,8 @@ if count(g:vundles, 'javascript')
   Bundle 'elzr/vim-json'
   Bundle 'groenewege/vim-less'
   Bundle 'taxilian/vim-web-indent'
+  Bundle 'pangloss/vim-javascript'
+  Bundle 'othree/javascript-libraries-syntax.vim'
 endif
 
 " HTML
