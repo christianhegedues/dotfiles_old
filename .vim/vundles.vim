@@ -3,10 +3,8 @@ Bundle 'gmarik/vundle'
 
 " General
 if count(g:vundles, 'general')
-  Bundle 'scrooloose/nerdtree'
   Bundle 'chriskempson/base16-vim'
   Bundle 'kien/ctrlp.vim'
-  Bundle 'jistr/vim-nerdtree-tabs'
   Bundle 'sudo.vim'
   Bundle 'bronson/vim-trailing-whitespace'
   Bundle 'mbbill/undotree'
@@ -15,6 +13,8 @@ if count(g:vundles, 'general')
   Bundle 'vim-airline/vim-airline-themes'
   Bundle 'mikewest/vimroom'
   Bundle 'tpope/vim-surround'
+  Bundle 'Shougo/vimfiler.vim'
+  Bundle 'Shougo/unite.vim'
 endif
 
 if count(g:vundles, 'git')
