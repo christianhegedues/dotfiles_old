@@ -42,7 +42,7 @@ if [[ `uname` == 'Darwin' ]]; then
 
         # Install more recent versions of some macOS tools.
         brew install ctags
-        brew install vim --width-override-system-vi
+        brew install neovim
         brew install homebrew/dupes/grep
         brew install homebrew/dupes/less
         brew install homebrew/dupes/openssh
