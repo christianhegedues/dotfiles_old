@@ -10,7 +10,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'bling/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'chriskempson/base16-vim'
-  Plug 'kien/ctrlp.vim'
+  Plug 'ctrlpvim/ctrlp.vim'
   Plug 'Raimondi/delimitMate'
   Plug 'tpope/vim-surround'
   Plug 'godlygeek/tabular'
