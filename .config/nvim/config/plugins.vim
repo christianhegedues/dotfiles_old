@@ -90,3 +90,16 @@ let g:javascript_plugin_ngdoc = 1
 " =============================================================================
 
 let g:nvim_typescript#type_info_on_hold = 1
+
+" =============================================================================
+" CtrlP
+" =============================================================================
+
+let g:ctrlp_custom_ignore       = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_match_window        = 'bottom,order:btt,min:1,max:10,results:10'
+let g:ctrlp_switch_buffer       = 'e'
+let g:ctrlp_working_path_mode   = 'ra'
+let g:ctrlp_clear_cache_on_exit = 1
+let g:ctrlp_show_hidden         = 1
+let g:ctrlp_follow_symlinks     = 1
+
