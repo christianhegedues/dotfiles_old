@@ -1,7 +1,5 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
-export PATH="$HOME/.rbenv/bin:$PATH";
-eval "$(rbenv init -)"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
