@@ -55,7 +55,7 @@ set showmatch
 set nowrap
 set laststatus=2
 set showtabline=0
-set list listchars=tab:➽\ ,trail:·,space:·
+set list listchars=tab:→\ ,trail:·,space:·
 set ttimeout
 set ttimeoutlen=100
 set scrolloff=5
