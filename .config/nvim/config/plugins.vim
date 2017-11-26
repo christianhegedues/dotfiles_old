@@ -116,3 +116,9 @@ let g:ctrlp_follow_symlinks     = 1
 
 let g:AutoPairShortcutFastWrap = '<C-e>'
 let g:AutoPairShortcutJump = '<S-TAB>'
+
+" =============================================================================
+" Echodoc settings
+" =============================================================================
+
+let g:echodoc#enable_at_startup = 1

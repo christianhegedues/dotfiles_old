@@ -50,7 +50,8 @@ endif
 
 set number
 set ruler
-set showcmd
+set noshowcmd
+set cmdheight=2
 set showmatch
 set nowrap
 set laststatus=2
