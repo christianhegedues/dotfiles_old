@@ -14,7 +14,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'jiangmiao/auto-pairs'
   Plug 'tpope/vim-surround'
   Plug 'godlygeek/tabular'
-  Plug 'nathanaelkane/vim-indent-guides'
 
   " Programming
   Plug 'Shougo/deoplete.nvim'
