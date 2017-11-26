@@ -10,6 +10,13 @@ function cdf() { # short for `cdfinder`
   cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
 }
 
+# Output the available terminal colors
+function colr() {
+  for i in {0..255}; do
+    printf "\x1b[38;5;${i}mcolor${i}\x1b[0m\n"
+  done
+}
+
 # Create a .tar.gz archive, using `zopfli`, `pigz` or `gzip` for compression
 function targz() {
   local tmpFile="${@%/}.tar";
