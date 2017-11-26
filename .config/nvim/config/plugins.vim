@@ -110,3 +110,9 @@ let g:ctrlp_clear_cache_on_exit = 1
 let g:ctrlp_show_hidden         = 1
 let g:ctrlp_follow_symlinks     = 1
 
+" =============================================================================
+" AutoPair settings
+" =============================================================================
+
+let g:AutoPairShortcutFastWrap = '<C-e>'
+let g:AutoPairShortcutJump = '<S-TAB>'

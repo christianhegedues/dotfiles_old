@@ -11,7 +11,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'vim-airline/vim-airline-themes'
   Plug 'tomasiser/vim-code-dark'
   Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'Raimondi/delimitMate'
+  Plug 'jiangmiao/auto-pairs'
   Plug 'tpope/vim-surround'
   Plug 'godlygeek/tabular'
   Plug 'nathanaelkane/vim-indent-guides'
