@@ -22,6 +22,13 @@ let g:airline_mode_map            = {
 \ 'S'  : 'S'
 \ }
 
+let g:airline#extensions#default#layout = [
+  \['a', 'c'],
+  \['b', 'error', 'warning']
+  \]
+
+let g:airline#extensions#hunks#non_zero_only = 1
+
 " =============================================================================
 " Deoplete
 " =============================================================================
