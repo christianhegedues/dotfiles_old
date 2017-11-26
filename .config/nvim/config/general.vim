@@ -60,12 +60,6 @@ set ttimeout
 set ttimeoutlen=100
 set scrolloff=5
 
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-  hi LineNr ctermfg=DarkGrey ctermbg=NONE
-endif
-
 " =============================================================================
 " Indent settings
 " =============================================================================
@@ -87,3 +81,9 @@ set hlsearch
 set ignorecase
 set smartcase
 
+" =============================================================================
+" Color settings
+" =============================================================================
+
+colorscheme codedark
+hi LineNr ctermfg=DarkGrey ctermbg=NONE

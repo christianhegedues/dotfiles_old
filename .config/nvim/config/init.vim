@@ -9,7 +9,7 @@ call plug#begin('~/.config/nvim/plugged')
   " Appearance
   Plug 'bling/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
-  Plug 'chriskempson/base16-vim'
+  Plug 'tomasiser/vim-code-dark'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'Raimondi/delimitMate'
   Plug 'tpope/vim-surround'
