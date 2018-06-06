@@ -2,7 +2,8 @@ set nocompatible
 filetype off
 
 call plug#begin('~/.vim/plugged')
-Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
+" Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -157,13 +158,18 @@ set ts=4                " number of spaces in a tab
 set sw=4                " number of spaces for indent
 set et                  " expand tabs into spaces
 
-set backupdir=~/.vim/tmp/
-set directory=~/.vim/tmp/
-set undodir=~/.vim/tmp/
+" Check, if backup directory excists and create it
+if !isdirectory($HOME.'/.vim/backup')
+  call mkdir($HOME.'/.vim/backup', 'p')
+endif
+
+set backupdir=~/.vim/backup/
+set directory=~/.vim/backup/
+set undodir=~/.vim/backup/
 
 set termguicolors
 syntax on
-colorscheme onedark
+colorscheme gruvbox
 
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
