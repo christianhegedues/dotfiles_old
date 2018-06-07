@@ -35,6 +35,7 @@ let g:gitgutter_sign_modified           = '•'
 let g:gitgutter_sign_removed            = '•'
 let g:gitgutter_sign_removed_first_line = '•'
 let g:gitgutter_sign_modified_removed   = '•'
+let g:gitgutter_override_sign_column_highlight = 1
 
 " CTRLP
 let g:ctrlp_custom_ignore       = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
@@ -170,6 +171,7 @@ set undodir=~/.vim/backup/
 set termguicolors
 syntax on
 colorscheme gruvbox
+highlight link GitGutterChange GruvboxYellow
 
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
