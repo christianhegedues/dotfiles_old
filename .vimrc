@@ -146,7 +146,7 @@ nmap <Leader>gp <Plug>GitGutterPrevHunk
 
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
-set list listchars=tab:→\ ,trail:·
+set list listchars=tab:→\ ,space:·,trail:·
 set completeopt=menuone,preview
 
 set hlsearch            " Highlight search match
