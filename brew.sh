@@ -61,7 +61,6 @@ if [[ `uname` == 'Darwin' ]]; then
         brew install imagemagick --with-webp
         brew install node
         brew install rename
-        brew install tmux
         brew install tree
 
         # http://github.com/sindresorhus/quick-look-plugins
