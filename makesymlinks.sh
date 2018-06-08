@@ -48,7 +48,7 @@ echo ""
 # install VIM  plugins
 #
 echo "Installing VIM plugins for you"
-vim +PluginInstall +qall
+vim +'PlugInstall --sync' +qa
 echo "... done"
 echo ""
 
