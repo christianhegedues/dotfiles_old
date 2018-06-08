@@ -167,7 +167,18 @@ set backupdir=~/.vim/backup/
 set directory=~/.vim/backup/
 set undodir=~/.vim/backup/
 
-set termguicolors
-syntax on
-colorscheme gruvbox
+" =============================================================================
+" COLORS
+" =============================================================================
+
+syntax enable            " Enable syntax highlighting
+set termguicolors        " Enable true color
+set t_ZH=[3m           " Fix to print italic comments
+set t_ZR=[23m          " Fix to print italic comments
+
+let g:gruvbox_bold   = 1 " Enable bold font type
+let g:gruvbox_italic = 1 " Enable italic font type
+
+colorscheme gruvbox      " Set gruvbox as colorscheme
+
 highlight link GitGutterChange GruvboxYellow
