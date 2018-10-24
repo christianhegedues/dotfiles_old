@@ -4,3 +4,6 @@ plugged/*
 
 # ignore undo, swap and backup
 tmp/*
+
+# ignore generated file
+.netrwhist
