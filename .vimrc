@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 
 call plug#begin('~/.vim/plugged')
-Plug 'morhetz/gruvbox'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -172,13 +172,18 @@ set undodir=~/.vim/backup/
 " =============================================================================
 
 syntax enable            " Enable syntax highlighting
-set termguicolors        " Enable true color
 set t_ZH=[3m           " Fix to print italic comments
 set t_ZR=[23m          " Fix to print italic comments
 
-let g:gruvbox_bold   = 1 " Enable bold font type
-let g:gruvbox_italic = 1 " Enable italic font type
+let g:PaperColor_Theme_Options = {
+  \   'theme': {
+  \     'default': {
+  \       'allow_bold': 1,
+  \       'allow_italic': 1
+  \     }
+  \   }
+  \ }
 
-colorscheme gruvbox      " Set gruvbox as colorscheme
-
-highlight link GitGutterChange GruvboxYellow
+set termguicolors        " Enable true color
+set background=light     " Use the light colorscheme
+colorscheme PaperColor   " Set PaperColor as colorscheme
