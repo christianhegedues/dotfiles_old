@@ -1,4 +1,5 @@
 # ignore vim plugins
+autoload/plug.vim*
 plugged/*
 
 # ignore undo, swap and backup
