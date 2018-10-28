@@ -6,8 +6,6 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
-Plug 'Valloric/YouCompleteMe'
-Plug 'ternjs/tern_for_vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
@@ -36,9 +34,6 @@ let g:gitgutter_sign_removed            = '•'
 let g:gitgutter_sign_removed_first_line = '•'
 let g:gitgutter_sign_modified_removed   = '•'
 let g:gitgutter_override_sign_column_highlight = 1
-
-" YOUCOMPLETEME
-let g:ycm_autoclose_preview_window_after_completion = 1
 
 " =============================================================================
 " MAPPINGS
