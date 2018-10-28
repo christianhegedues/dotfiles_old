@@ -5,10 +5,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/YouCompleteMe'
 Plug 'ternjs/tern_for_vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " GIT Related
 Plug 'tpope/vim-fugitive'
@@ -35,15 +36,6 @@ let g:gitgutter_sign_removed            = '•'
 let g:gitgutter_sign_removed_first_line = '•'
 let g:gitgutter_sign_modified_removed   = '•'
 let g:gitgutter_override_sign_column_highlight = 1
-
-" CTRLP
-let g:ctrlp_custom_ignore       = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
-let g:ctrlp_match_window        = 'bottom,order:btt,min:1,max:10,results:10'
-let g:ctrlp_switch_buffer       = 'e'
-let g:ctrlp_working_path_mode   = 'ra'
-let g:ctrlp_clear_cache_on_exit = 1
-let g:ctrlp_show_hidden         = 1
-let g:ctrlp_follow_symlinks     = 1
 
 " YOUCOMPLETEME
 let g:ycm_autoclose_preview_window_after_completion = 1
@@ -119,14 +111,14 @@ nmap <leader>k :cn<CR>
 " ,j to get the previous location (compilation errors, grep etc)
 nmap <leader>j :cp<CR>
 
-nnoremap <silent> <Leader>f :CtrlP<CR>
+nnoremap <silent> <Leader>f :Files<CR>
 nnoremap <silent> <Leader>fm :CtrlPMRU<CR>
 
 " =============================================================================
 " BUFFER RELATED
 " =============================================================================
 
-nnoremap <silent> <Leader>b :CtrlPBuffer<CR>      " cycle between buffer
+nnoremap <silent> <Leader>b :Buffers<CR>      " cycle between buffer
 nnoremap <silent> <Leader>bd :bdelete<CR>         " (D)elete the current buffer
 nnoremap <silent> <Leader>bu :bunload<CR>         " (U)nload the current buffer
 nnoremap <silent> <Leader>bl :b#<CR>              " (L)ast buffer
@@ -143,6 +135,7 @@ nmap <Leader>gp <Plug>GitGutterPrevHunk
 " APPEARANCE
 " =============================================================================
 
+set viminfo=""
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
 set list listchars=tab:→\ ,space:·,trail:·
