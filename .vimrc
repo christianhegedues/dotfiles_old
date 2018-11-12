@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 
 call plug#begin('~/.vim/plugged')
-Plug 'NLKNguyen/papercolor-theme'
+Plug 'iCyMind/NeoSolarized'
 Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
@@ -163,15 +163,12 @@ syntax enable            " Enable syntax highlighting
 set t_ZH=[3m           " Fix to print italic comments
 set t_ZR=[23m          " Fix to print italic comments
 
-let g:PaperColor_Theme_Options = {
-  \   'theme': {
-  \     'default': {
-  \       'allow_bold': 1,
-  \       'allow_italic': 1
-  \     }
-  \   }
-  \ }
+let g:neosolarized_contrast="high"
+let g:neosolarized_visibility="low"
+let g:neosolarized_bold = 1
+let g:neosolarized_underline = 1
+let g:neosolarized_italic = 1
 
-set termguicolors        " Enable true color
-set background=light     " Use the light colorscheme
-colorscheme PaperColor   " Set PaperColor as colorscheme
+set termguicolors             " Enable true color
+set background=light          " Use the light colorscheme
+colorscheme NeoSolarized      " Set colorscheme
